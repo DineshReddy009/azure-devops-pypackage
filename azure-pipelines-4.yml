@@ -16,7 +16,7 @@ steps:
 
 - script: |
     python -m pip install --upgrade pip
-    pip install twine
+    pip install twine keyring artifacts-keyring
   displayName: 'Install dependencies'
 
 # - script: |
