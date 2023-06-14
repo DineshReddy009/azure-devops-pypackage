@@ -28,5 +28,4 @@ steps:
   inputs:
     artifactFeed: Python-Sample-Code
 - script: |
-   python setup.py sdist bdist_wheel
    twine upload -r Python-Sample-Code dist/*
