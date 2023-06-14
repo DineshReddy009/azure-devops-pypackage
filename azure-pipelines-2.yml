@@ -37,6 +37,6 @@ steps:
     #publishLocation: 'Container'
 - task: TwineAuthenticate@1
   inputs:
-    artifactFeed: Python-code
+    artifactFeed: Python_code
 - script: |
-   twine upload -r "Python-code" --config-file dist/*
+   twine upload -r "Python_code" --config-file dist/*
