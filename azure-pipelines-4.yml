@@ -1,0 +1,32 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+strategy:
+  matrix:
+    Python36:
+      python.version: '3.11.2'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install twine
+  displayName: 'Install dependencies'
+
+# - script: |
+#     pip install pytest pytest-azurepipelines
+#     pytest
+#   displayName: 'pytest'
+
+- task: TwineAuthenticate@1
+  inputs:
+    artifactFeed: Python-Sample-Code
+- script: |
+   python setup.py sdist bdist_wheel
+   twine upload -r Python-Sample-Code dist/*
