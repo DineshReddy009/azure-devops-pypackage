@@ -28,4 +28,4 @@ steps:
   inputs:
     artifactFeed: animalsounds
 - script: |
-   twine upload -r "animalsounds" --config-file dist/*
+   twine upload -r "animalsounds" --config-file $(PYPIRC_PATH) dist/*
