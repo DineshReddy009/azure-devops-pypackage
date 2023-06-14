@@ -36,8 +36,3 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'dist'
     publishLocation: 'Container'
-- task: TwineAuthenticate@1
-  inputs:
-    artifactFeed: Python_code
-- script: |
-   twine upload -r "Python_code" --config-file dist/*
