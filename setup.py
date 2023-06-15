@@ -10,9 +10,9 @@ setup(
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   long_description=long_description,
   long_description_content_type='text/markdown',  # This is important!
-  author = 'Vivek Raja P S',                   # Type in your name
-  author_email = 'vivekraja98@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/Vivek0712/azure-devops-pypackage',   # Provide either the link to your github or to your website
+  author = 'Dinesh reddy',                   # Type in your name
+  author_email = 'nagiureddydineshreddy98@gmail.com',      # Type in your E-Mail
+  url = 'https://github.com/DineshReddy009/azure-devops-pypackage',   # Provide either the link to your github or to your website
   #download_url = 'https://github.com/RaaLabs/TSIClient/archive/v_0.7.tar.gz',    # If you create releases through Github, then this is important
   keywords = ['Azure', 'DevOps', 'Python'],   # Keywords that define your package best
   classifiers=[
